@@ -1,0 +1,71 @@
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+nav {
+    z-index: 3;
+    box-shadow: 2px .4rem .8rem rgba(51, 51, 51, 0.151);
+    padding: 0 2rem;
+    height: 4rem;
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        padding:0;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: #072F60;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 0 #2490eb;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+nav .main-links a:hover {
+    box-shadow: inset 100px 0 0 0 #2490eb;
+    color: white;
+}
+
+nav button {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: -2.5rem;
+    margin-right: 1rem;
+}
+
+.login-section {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section span:nth-child(2) {
+    padding: 0 .5rem;
+}
+
+.login-section span a {
+    /* border: 2px solid #2490eb; */
+    background-color: #2491ebcd;
+    /* border-radius: 20px; */
+    transition: all .3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.login-section span a:hover {
+    background-color: #157fd5;
+    color: #fff;
+}
+
