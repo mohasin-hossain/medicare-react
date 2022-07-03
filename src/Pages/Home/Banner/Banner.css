@@ -1,10 +1,10 @@
 #banner {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../../../images/hero-3.jpeg");
+    url("../../../images/hero-3.jpeg");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
-  height: 90vh;
+  height: calc(100vh - 4rem);
   width: 100%;
   color: #fff;
   display: flex;
@@ -46,7 +46,6 @@
     transition: all .3s;
     background-color: #0DA8BC;
     border: none;
-
 }
 
 .btns button:first-child:hover {

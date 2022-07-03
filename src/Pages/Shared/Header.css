@@ -10,7 +10,7 @@ header {
 nav {
     z-index: 3;
     box-shadow: 2px .4rem .8rem rgba(51, 51, 51, 0.151);
-    padding: 0 2rem;
+    padding: 0 4rem;
     height: 4rem;
 }
 

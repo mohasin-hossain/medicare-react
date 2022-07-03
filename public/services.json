@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "service": "Laboratory Services",
+    "serviceDetails": "In an our laboratory, You pass wide a range of the tests that allows us to n diagnosis tests.",
+    "img": "https://i.ibb.co/MMwq68M/labrotary.png"
+  },
+  {
+    "id": 2,
+    "service": "Cardiologist",
+    "serviceDetails": "Mediku includes a cardiovascular unit dedicated to pre- and post-surgical care of people",
+    "img": "https://i.ibb.co/874smkK/heart-Disease.png"
+  },
+  {
+    "id": 3,
+    "service": "Dental Care",
+    "serviceDetails": "We offers a greats dental cares including cosmetic and an oral dental implant emergency care.",
+    "img": "https://i.ibb.co/8BbQx2b/dental-Care.png"
+  },
+  {
+    "id": 4,
+    "service": "Neurology Surgery",
+    "serviceDetails": "We offer for severals services helps with yours neurological condition our patient services.",
+    "img": "https://i.ibb.co/4tKpzq9/neurology.png"
+  },
+  {
+    "id": 5,
+    "service": "Eye Care",
+    "serviceDetails": "Ours eye care services utilizes state technology and employs team of experts for paediatric.",
+    "img": "https://i.ibb.co/zG508wR/eyeCare.png"
+  },
+  {
+    "id": 6,
+    "service": "X-Ray",
+    "serviceDetails": "We offeres a greats x-ray cares including cosmetic and an oral dental implant emergency care.",
+    "img": "https://i.ibb.co/WKtBghX/xray.png"
+  }
+]
