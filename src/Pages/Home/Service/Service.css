@@ -21,7 +21,8 @@
   border-top-right-radius: 10px;
 }
 
-.service button {
+.service a {
+  text-decoration: none;
   padding: 0.6rem;
   cursor: pointer;
   outline: none;
@@ -35,6 +36,7 @@
   border-radius: 10px;
 }
 
-.service button:hover {
+.service a:hover {
   background-color: #0b90a2;
+  color: #fff;
 }

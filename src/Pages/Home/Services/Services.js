@@ -14,12 +14,7 @@ const Services = () => {
   return (
     <div className="services">
       <h4>What we can offer to you?</h4>
-      <h1 className="services-main-title">Wide range of <br /> <span>medical services</span></h1>
-      <p className="services-main-details">
-        Capitalize on low hanging fruit to identify a ballpark value added
-        activity to beta test. Override the digital divide with additional
-        clickthroughs from DevOps.
-      </p>
+      <h1 className="services-main-title">Wide range of <span>medical services</span></h1>
       <div className="service-container">
         {services.map((service) => (
           <Service key={service.id} service={service}></Service>
