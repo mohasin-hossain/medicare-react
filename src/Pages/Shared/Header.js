@@ -4,9 +4,11 @@ import "./Header.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../images/surgery-logo.png";
-
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
+  console.log(user);
   return (
     <header>
       <Navbar bg="light" expand="xl" fixed="top">
@@ -22,13 +24,27 @@ const Header = () => {
               <Link to="/contact">Contact</Link>
             </Nav>
             <div className="login-section">
+              {user.email && (
+                <div className="user-content">
+                  <img src={user.photoURL} alt="" />
+                  <span>{user.displayName}</span>
+                </div>
+              )}
               <span>
-                <Link to="/login">Login</Link>
+                {user.email ? (
+                  <button className="logout-btn" onClick={logOut}>
+                    Logout
+                  </button>
+                ) : (
+                  <Link to="/login">Login</Link>
+                )}
               </span>
-              <span>
-                <small style={{ marginRight: ".5rem" }}>/</small>
-                <Link to="/register">Register</Link>
-              </span>
+              {!user.email && (
+                <span>
+                  <small style={{ marginRight: ".5rem" }}>/</small>
+                  <Link to="/register">Register</Link>
+                </span>
+              )}
             </div>
           </Navbar.Collapse>
         </Container>

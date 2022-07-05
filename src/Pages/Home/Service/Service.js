@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { img, serviceDetails, service } = props.service;
+  const { id, img, serviceDetails, service } = props.service;
 
   return (
     <div className="service">
@@ -10,7 +11,7 @@ const Service = (props) => {
       <div className="service-content">
         <h1>{service}</h1>
         <p>{serviceDetails}</p>
-        <button>Learn More</button>
+        <Link to={`/services/${id}`}>Learn More</Link>
       </div>
     </div>
   );

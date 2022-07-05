@@ -35,14 +35,6 @@ nav .main-links a:hover {
     color: white;
 }
 
-nav button {
-    outline: none;
-    border: none;
-    background: transparent;
-    margin-left: -2.5rem;
-    margin-right: 1rem;
-}
-
 .login-section {
     padding: 1rem 1rem;
     display: flex;
@@ -66,4 +58,33 @@ nav button {
     background-color: #0DA8BC;
     color: #fff;
 }
+
+.user-content {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    border-radius: 20px;
+    background-color: rgb(232, 231, 231);
+    font-weight: 500;
+    padding: .3rem;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.user-content img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100vh;
+}
+
+.logout-btn {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-weight: 500;
+}
+
+
+
+
 

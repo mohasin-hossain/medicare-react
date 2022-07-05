@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../../../images/hero-3.jpeg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   height: calc(100vh - 4rem);
   width: 100%;
@@ -20,7 +20,7 @@
 }
 
 #banner h1 span {
-  color: #0DA8BC;
+  color: #0da8bc;
 }
 
 #banner p {
@@ -30,37 +30,86 @@
   line-height: 1.55;
 }
 
+.banner-details {
+  max-width: 50%;
+  text-align: center;
+}
+
 .btns {
   display: flex;
   gap: 0.7rem;
 }
 
-.btns button{
-    padding: .6rem;
-    cursor:pointer;
-    outline: none;
-    background-color: transparent;
-    color: #fff;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: all .3s;
-    background-color: #0DA8BC;
-    border: none;
+.btns button {
+  padding: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  background-color: #0da8bc;
+  border: none;
+}
+
+.btns a {
+  background-color: #e64a4d;
+  padding: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  text-decoration: none;
+}
+
+.btns a:hover {
+  color: #fff;
+  background-color: #ca3f41;
 }
 
 .btns button:first-child:hover {
-    background-color: #0c9cae;
-}
-
-.btns button:last-child {
-    background-color: #e64a4d;
+  background-color: #0c9cae;
 }
 
 .btns .right-icon {
-    font-size: 14px;
-    transition: all .3s;
+  font-size: 14px;
+  transition: all 0.3s;
 }
 
-.btns button:last-child:hover .right-icon {
-    transform: translateX(5px);
+.btns a:hover .right-icon {
+  transform: translateX(5px);
+}
+
+@media only screen and (max-width: 1024px) {
+  #banner h1 {
+    font-size: 50px;
+  }
+  #banner p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #banner h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #banner p {
+    font-size: 15px;
+  }
+  .banner-details {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #banner p {
+    font-size: 15px;
+  }
+  .banner-details {
+    max-width: 80%;
+  }
 }
