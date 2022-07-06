@@ -8,7 +8,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
   const { user, logOut } = useAuth();
-  console.log(user);
+
   return (
     <header>
       <Navbar bg="light" expand="xl" fixed="top">
@@ -24,14 +24,14 @@ const Header = () => {
               <Link to="/contact">Contact</Link>
             </Nav>
             <div className="login-section">
-              {user.email && (
+              {(user.displayName || user.email) && (
                 <div className="user-content">
-                  <img src={user.photoURL} alt="" />
+                  {user.photoURL ? <img src={user.photoURL} alt="" /> : null}
                   <span>{user.displayName}</span>
                 </div>
               )}
               <span>
-                {user.email ? (
+                {(user.displayName || user.email) ? (
                   <button className="logout-btn" onClick={logOut}>
                     Logout
                   </button>
@@ -39,7 +39,7 @@ const Header = () => {
                   <Link to="/login">Login</Link>
                 )}
               </span>
-              {!user.email && (
+              {!(user.displayName || user.email) && (
                 <span>
                   <small style={{ marginRight: ".5rem" }}>/</small>
                   <Link to="/register">Register</Link>
