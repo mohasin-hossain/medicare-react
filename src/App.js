@@ -1,8 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
+import About from "./Pages/About/About";
 import Appointment from "./Pages/Appointment/Appointment";
 import Contact from "./Pages/Contact/Contact";
+import Faq from "./Pages/Faq/Faq";
 import Home from "./Pages/Home/Home/Home";
 import ServiceDetails from "./Pages/Home/ServiceDetails/ServiceDetails";
 import Services from "./Pages/Home/Services/Services";
@@ -22,6 +25,8 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/faq" element={<Faq />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/services/:serviceId" element={<ServiceDetails />}></Route>
           <Route path="/appointment" element={<Appointment />}></Route>
