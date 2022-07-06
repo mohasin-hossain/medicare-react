@@ -75,6 +75,14 @@
   color: rgb(213, 208, 208);
 }
 
+#email, 
+#password,
+#name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .form .button {
   width: 100%;
   background: #fff;

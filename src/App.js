@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
-import About from "./Pages/About/About";
+import About from "./Pages/Home/About/About";
 import Appointment from "./Pages/Appointment/Appointment";
 import Contact from "./Pages/Contact/Contact";
 import Faq from "./Pages/Faq/Faq";

@@ -1,49 +1,49 @@
 .contact {
-    padding: 4rem 4rem;
+  padding: 4rem 4rem;
 }
 
 .contact h4 {
-    font-size: 20px;
-    background-color: #0da8bc74;
-    display: inline-block;
-    color: #0b7e8d;
+  font-size: 20px;
+  background-color: #0da8bc74;
+  display: inline-block;
+  color: #0b7e8d;
 }
 
 .contact-main-title {
-    font-size: 60px;
-    line-height: 1;
-    position: relative;
+  font-size: 60px;
+  line-height: 1;
+  position: relative;
+  color: #0da8bc;
 }
 
 .contact-main-title span {
-    color: #F95759;
+  color: #f95759;
 }
 
 .contact-main-title::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 30%;
-    background-color: #0DA8BC;
-    top: 110%;
-    left: 0;
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 30%;
+  background-color: #0da8bc;
+  top: 110%;
+  left: 0;
 }
 
-
 @media only screen and (max-width: 1024px) {
-    .contact-main-title {
-        font-size: 50px;
-    }
+  .contact-main-title {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .contact-main-title {
-        font-size: 40px;
-    }
-    .contact {
-        padding: 2rem;
-    }
-    .contact h4 {
-        font-size: 15px;
-    }
+  .contact-main-title {
+    font-size: 40px;
+  }
+  .contact {
+    padding: 2rem;
+  }
+  .contact h4 {
+    font-size: 15px;
+  }
 }

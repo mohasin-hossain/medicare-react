@@ -50,6 +50,7 @@
   transition: all 0.3s;
   background-color: #0da8bc;
   border: none;
+  text-transform: uppercase;
 }
 
 .btns a {
@@ -63,6 +64,7 @@
   transition: all 0.3s;
   border: none;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btns a:hover {
