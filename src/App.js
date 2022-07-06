@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
@@ -10,6 +10,7 @@ import Home from "./Pages/Home/Home/Home";
 import ServiceDetails from "./Pages/Home/ServiceDetails/ServiceDetails";
 import Services from "./Pages/Home/Services/Services";
 import Login from "./Pages/Login/Login/Login";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import NotFound from "./Pages/NotFound/NotFound";
 import Register from "./Pages/Register/Register";
 import Header from "./Pages/Shared/Header";
@@ -28,8 +29,22 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/faq" element={<Faq />}></Route>
           <Route path="/services" element={<Services />}></Route>
-          <Route path="/services/:serviceId" element={<ServiceDetails />}></Route>
-          <Route path="/appointment" element={<Appointment />}></Route>
+          <Route
+            path="/services/:serviceId"
+            element={
+              <PrivateRoute>
+                <ServiceDetails />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route
+            path="/appointment"
+            element={
+              <PrivateRoute>
+                <Appointment />
+              </PrivateRoute>
+            }
+          ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
