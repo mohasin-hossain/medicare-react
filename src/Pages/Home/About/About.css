@@ -54,6 +54,7 @@
   font-size: 4rem;
   color: #0da8bc;
   transition: all .3s;
+  width: 10rem;
 }
 
 .values-container .value div:first-child:hover {

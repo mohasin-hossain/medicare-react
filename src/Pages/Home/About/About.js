@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
-  const doctor = <FontAwesomeIcon icon={faUserDoctor} />;
+  const doctor = <FontAwesomeIcon className="doctor-icon" icon={faUserDoctor} />;
   const heartCircleBolt = <FontAwesomeIcon icon={faHeartCircleBolt} />;
   const suitcaseMedical = <FontAwesomeIcon icon={faSuitcaseMedical} />;
   const userNurse = <FontAwesomeIcon icon={faUserNurse} />;
