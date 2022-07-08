@@ -77,4 +77,7 @@
   .about h4 {
     font-size: 15px;
   }
+  .values-container .value div:first-child {
+    width: 50%;
+  }
 }

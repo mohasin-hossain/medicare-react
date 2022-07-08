@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="light" expand="xl" fixed="top">
+      <Navbar collapseOnSelect bg="light" expand="xl" fixed="top">
         <Container fluid className="bg-light">
           <Link to='/home'>
             <img className="logo" src={logo} alt="" />
@@ -19,12 +19,12 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-4 my-xl-0 main-links" navbarScroll>
-              <Link to="/home">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/services">Services</Link>
-              <Link to="/doctors">Doctors</Link>
-              <Link to="/faq">Faq</Link>
-              <Link to="/contact">Contact</Link>
+              <Nav.Link as={Link} eventKey='1' to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} eventKey='2' to="/about">About</Nav.Link>
+              <Nav.Link as={Link} eventKey='3' to="/services">Services</Nav.Link>
+              <Nav.Link as={Link} eventKey='4' to="/doctors">Doctors</Nav.Link>
+              <Nav.Link as={Link} eventKey='5' to="/faq">Faq</Nav.Link>
+              <Nav.Link as={Link} eventKey='6' to="/contact">Contact</Nav.Link>
             </Nav>
             <div className="login-section">
               {(user.displayName || user.email) && (
