@@ -20,7 +20,8 @@ nav {
     }
 }
 
-nav .main-links a {
+nav .main-links a,
+nav a {
     text-decoration: none;
     padding: .5rem 1rem;
     color: #072F60 !important;
@@ -28,6 +29,10 @@ nav .main-links a {
     box-shadow: inset 0 0 0 0 #0DA8BC;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     text-transform: uppercase;
+}
+
+nav a {
+    color: #fff !important;
 }
 
 nav .main-links a:hover {
