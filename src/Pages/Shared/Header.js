@@ -13,13 +13,16 @@ const Header = () => {
     <header>
       <Navbar bg="light" expand="xl" fixed="top">
         <Container fluid className="bg-light">
-          <img className="logo" src={logo} alt="" />
+          <Link to='/home'>
+            <img className="logo" src={logo} alt="" />
+          </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-4 my-xl-0 main-links" navbarScroll>
               <Link to="/home">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/services">Services</Link>
+              <Link to="/doctors">Doctors</Link>
               <Link to="/faq">Faq</Link>
               <Link to="/contact">Contact</Link>
             </Nav>
@@ -31,7 +34,7 @@ const Header = () => {
                 </div>
               )}
               <span>
-                {(user.displayName || user.email) ? (
+                {user.displayName || user.email ? (
                   <button className="logout-btn" onClick={logOut}>
                     Logout
                   </button>

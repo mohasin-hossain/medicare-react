@@ -1,0 +1,37 @@
+.doctors-container .doctor {
+    background-color: #f1f1f1;
+}
+.doctors-container .doctor img {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.doctors-container .doctor h3 {
+    font-size: 16px;
+    margin: 12px 0;
+    color: #444444;
+}
+
+.doctors-container .doctor h1 {
+    font-size: 25px;
+    color: #222222;
+}
+
+.doctors-container .doctor p {
+    text-align: justify;
+}
+
+.doctors-container .doctor .doctor-content {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.doctors-container .doctor .doc-icon {
+    font-size: 40px;
+    width: 40px;
+    background-color: #0da8bc;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 100vh;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
