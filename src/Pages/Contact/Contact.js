@@ -8,6 +8,7 @@ const Contact = () => {
       <h1 className="contact-main-title">
         Send your<span> feedback</span>
       </h1>
+      <p>Coming Soon!</p>
     </div>
   );
 };

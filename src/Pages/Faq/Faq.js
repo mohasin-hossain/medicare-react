@@ -7,6 +7,7 @@ const FAQ = () => {
       <h1 className="faq-main-title">
         Check these <span>Questions!</span>
       </h1>
+      <p>Coming Soon!</p>
     </div>
   );
 };

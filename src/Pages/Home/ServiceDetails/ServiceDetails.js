@@ -1,21 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import useServices from "../../../hooks/useServices";
 import "./ServiceDetails.css";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch("/services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  const [services] = useServices();
 
   const filteredService = services.find(
     (service) => service.id === parseInt(serviceId)
   );
-  console.log(filteredService);
 
   return (
     <div className="service-details">
