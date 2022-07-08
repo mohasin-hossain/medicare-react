@@ -1,0 +1,10 @@
+.service-details {
+    padding: 4rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.service-details img {
+    width: 100%;
+}

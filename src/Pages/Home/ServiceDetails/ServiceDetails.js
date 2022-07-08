@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "./ServiceDetails.css";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();
@@ -10,11 +11,21 @@ const ServiceDetails = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
-  console.log(services)
+
+  const filteredService = services.find(
+    (service) => service.id === parseInt(serviceId)
+  );
+  console.log(filteredService);
 
   return (
-    <div>
-      {<h1>Service Details - {serviceId} {services.length}</h1> }
+    <div className="service-details">
+      <div>
+        <h1>{filteredService?.service}</h1>
+        <p>{filteredService?.serviceDetails}</p>
+      </div>
+      <div>
+        <img src={filteredService?.img} alt="" />
+      </div>
     </div>
   );
 };
